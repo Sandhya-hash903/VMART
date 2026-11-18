@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customer Login | V Mart</title>
+
+    <link rel="stylesheet" href="../css/customer.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+    <div class="form-box">
+
+        <h2>Customer Login</h2>
+
+        <form id="loginForm">
+
+            <input
+                id="email"
+                type="email"
+                placeholder="Email Address"
+                autocomplete="email"
+                required
+            >
+
+            <input
+                id="password"
+                type="password"
+                placeholder="Password"
+                autocomplete="current-password"
+                required
+            >
+
+            <button type="submit" id="loginButton">
+                Login
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+        <p>
+            Don't have an account?
+            <a href="register.html">Create Account</a>
+        </p>
+
+    </div>
+
+    <!-- Customer Session -->
+    <script src="../js/customer.js"></script>
+
+    <!-- Login -->
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>
