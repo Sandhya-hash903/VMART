@@ -1,0 +1,732 @@
+
+/* =========================================================
+   V MART - CHECKOUT CSS
+   Delivery Address + Edit + Delete
+   COD + Razorpay + Order Summary
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f6f6f6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+
+/* =========================================================
+   CHECKOUT CONTAINER
+========================================================= */
+
+.checkout-container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.checkout-container h1 {
+    margin-bottom: 25px;
+    color: #222;
+}
+
+
+/* =========================================================
+   CHECKOUT SECTIONS
+========================================================= */
+
+.checkout-section {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.checkout-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.checkout-section h3 {
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   DELIVERY ADDRESS SECTION
+========================================================= */
+
+.delivery-address-section {
+    width: 100%;
+}
+
+.address-list {
+    width: 100%;
+}
+
+
+/* =========================================================
+   ADDRESS CARD
+========================================================= */
+
+.address-card {
+    position: relative;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    background: #fff;
+
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.address-card:hover {
+    border-color: #a50905;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================================
+   ADDRESS RADIO BUTTON
+========================================================= */
+
+.address-radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+
+    margin-bottom: 12px;
+}
+
+.address-radio input[type="radio"] {
+    width: 17px;
+    height: 17px;
+
+    margin: 0;
+
+    accent-color: #a50905;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   ADDRESS DETAILS
+========================================================= */
+
+.address-card p {
+    margin: 10px 0;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #333;
+}
+
+.address-card strong {
+    color: #222;
+}
+
+
+/* =========================================================
+   EDIT AND DELETE BUTTONS
+========================================================= */
+
+.address-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.address-actions button {
+    padding: 8px 16px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: background 0.2s ease,
+                color 0.2s ease;
+}
+
+
+/* EDIT BUTTON */
+
+.edit-address-btn {
+    background: #eee;
+    color: #333;
+}
+
+.edit-address-btn:hover {
+    background: #ddd;
+}
+
+
+/* DELETE BUTTON */
+
+.delete-address-btn {
+    background: #a50905;
+    color: #fff;
+}
+
+.delete-address-btn:hover {
+    background: #790000;
+}
+
+
+/* DISABLED BUTTONS */
+
+.address-actions button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   NO ADDRESS
+========================================================= */
+
+.no-address {
+    padding: 15px;
+    margin-bottom: 10px;
+
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 7px;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   ADDRESS ERROR
+========================================================= */
+
+.address-error {
+    padding: 15px;
+    margin-bottom: 10px;
+
+    color: #a50905;
+
+    background: #fff8f6;
+    border: 1px solid #f0d3ce;
+    border-radius: 7px;
+}
+
+.address-error button {
+    margin-top: 10px;
+    padding: 8px 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #a50905;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   ADD NEW ADDRESS BUTTON
+========================================================= */
+
+.add-new-address-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-top: 5px;
+    padding: 8px 0;
+
+    border: none;
+    background: transparent;
+
+    color: #a50905;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.add-new-address-btn:hover {
+    color: #790000;
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   ADDRESS FORM
+========================================================= */
+
+.address-form {
+    width: 100%;
+
+    margin-top: 18px;
+    padding: 20px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    background: #fff;
+}
+
+.address-form h3 {
+    margin: 0 0 18px 0;
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   ADDRESS FORM GROUP
+========================================================= */
+
+.address-form .form-group {
+    margin-bottom: 15px;
+}
+
+.address-form label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #333;
+}
+
+
+/* =========================================================
+   ADDRESS INPUTS
+========================================================= */
+
+.address-form input,
+.address-form textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    background: #fff;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+    outline: none;
+}
+
+.address-form input:focus,
+.address-form textarea:focus {
+    border-color: #a50905;
+
+    box-shadow: 0 0 0 2px rgba(165, 9, 5, 0.08);
+}
+
+.address-form textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+
+/* =========================================================
+   CITY / STATE / PINCODE
+========================================================= */
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+
+/* =========================================================
+   ADDRESS FORM BUTTONS
+========================================================= */
+
+.address-form-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+.address-form-buttons button {
+    width: auto;
+
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* SAVE / UPDATE */
+
+#saveAddressBtn {
+    background: #a50905;
+    color: #fff;
+}
+
+#saveAddressBtn:hover {
+    background: #790000;
+}
+
+#saveAddressBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* CANCEL */
+
+#cancelAddressBtn {
+    background: #eee;
+    color: #333;
+}
+
+#cancelAddressBtn:hover {
+    background: #ddd;
+}
+
+
+/* =========================================================
+   PAYMENT OPTIONS
+========================================================= */
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 15px;
+    margin-bottom: 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+.payment-option:hover {
+    border-color: #a50905;
+}
+
+.payment-option input {
+    accent-color: #a50905;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   ONLINE PAYMENT
+========================================================= */
+
+.online-payment-box {
+    margin-top: 15px;
+    padding: 18px;
+
+    background: #fff8f6;
+
+    border: 1px solid #f0d3ce;
+    border-radius: 8px;
+}
+
+.online-payment-box p {
+    margin-top: 0;
+    color: #555;
+}
+
+#onlinePayBtn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 0;
+    border-radius: 6px;
+
+    background: #a50905;
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#onlinePayBtn:hover {
+    background: #790000;
+}
+
+#onlinePayBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   PLACE ORDER BUTTON
+========================================================= */
+
+.place-order-btn {
+    width: 100%;
+
+    margin-top: 15px;
+    padding: 15px;
+
+    border: 0;
+    border-radius: 6px;
+
+    background: #a50905;
+    color: #fff;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.place-order-btn:hover {
+    background: #790000;
+}
+
+.place-order-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   ORDER SUMMARY
+========================================================= */
+
+#orderSummary {
+    width: 100%;
+}
+
+.checkout-product {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+.checkout-product-image img {
+    width: 90px;
+    height: 100px;
+
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.checkout-product-details {
+    flex: 1;
+}
+
+.checkout-product-details h3 {
+    margin: 0 0 10px;
+    font-size: 17px;
+}
+
+.checkout-product-details p {
+    margin: 6px 0;
+    color: #555;
+}
+
+.checkout-product-details strong {
+    color: #222;
+}
+
+
+/* =========================================================
+   CHECKOUT TOTAL
+========================================================= */
+
+.checkout-total {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.checkout-total span {
+    color: #a50905;
+}
+
+
+/* =========================================================
+   PAYMENT MESSAGE
+========================================================= */
+
+#paymentMessage {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .checkout-container {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .checkout-section {
+        padding: 18px;
+    }
+
+    .address-card {
+        padding: 15px;
+    }
+
+    .address-radio {
+        font-size: 15px;
+    }
+
+    .address-card p {
+        font-size: 14px;
+    }
+
+    .address-actions {
+        gap: 8px;
+    }
+
+    .address-actions button {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .address-form {
+        padding: 15px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .address-form-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .address-form-buttons button {
+        width: 100%;
+    }
+
+    .checkout-product {
+        gap: 12px;
+    }
+
+    .checkout-product-image img {
+        width: 75px;
+        height: 90px;
+    }
+
+    .checkout-product-details h3 {
+        font-size: 15px;
+    }
+
+    .checkout-product-details p {
+        font-size: 13px;
+    }
+
+    .checkout-total {
+        font-size: 19px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+    .checkout-container {
+        width: 96%;
+    }
+
+    .checkout-section {
+        padding: 15px;
+    }
+
+    .address-card {
+        padding: 14px;
+    }
+
+    .address-actions {
+        flex-wrap: wrap;
+    }
+
+    .address-actions button {
+        padding: 8px 12px;
+    }
+
+    .address-card p {
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    .address-radio {
+        font-size: 14px;
+    }
+
+    .checkout-product {
+        align-items: flex-start;
+    }
+
+    .checkout-product-image img {
+        width: 65px;
+        height: 80px;
+    }
+
+    .checkout-product-details h3 {
+        font-size: 14px;
+    }
+
+    .checkout-product-details p {
+        font-size: 12px;
+    }
+
+}

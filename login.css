@@ -1,0 +1,11 @@
+body {
+    background: #eee;
+}
+
+.form-box h2 {
+    text-align: center;
+}
+
+.form-box button {
+    width: 100%;
+}

@@ -1,0 +1,586 @@
+
+/* =========================================================
+   V MART - WOMEN'S PAGE CSS
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.women-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 6%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.women-header nav {
+    display: flex;
+    gap: 25px;
+}
+
+.women-header nav a,
+.header-actions a {
+    text-decoration: none;
+    color: #222;
+}
+
+.women-header nav a:hover,
+.women-header nav .active {
+    color: #8f0c05;
+}
+
+.header-actions {
+    display: flex;
+    gap: 18px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.women-hero {
+    min-height: 560px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background: #f5eee7;
+}
+
+.women-hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 8%;
+}
+
+.hero-label {
+    color: #8f0c05;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.women-hero-content h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 15px 0 25px;
+}
+
+.women-hero-content h1 span {
+    display: block;
+    color: #8f0c05;
+}
+
+.women-hero-content p {
+    line-height: 1.8;
+    color: #666;
+    max-width: 500px;
+}
+
+.women-hero-image {
+    height: 560px;
+    overflow: hidden;
+}
+
+.women-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.women-intro {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.women-intro p:first-child {
+    color: #8f0c05;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.women-intro h2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.filter-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #f8f8f8;
+}
+
+.filter-section h2 {
+    margin-top: 0;
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.filter-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.filter-box select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 4px;
+}
+
+
+/* =========================================================
+   PRODUCTS SECTION
+========================================================= */
+
+.products-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.products-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.products-heading p {
+    color: #8f0c05;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.products-heading h2 {
+    font-size: 32px;
+    margin: 5px 0;
+}
+
+
+/* =========================================================
+   PRODUCT GRID
+========================================================= */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.product {
+    background: #fff;
+    border: 1px solid #eee;
+    padding-bottom: 18px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE - FULL IMAGE VISIBLE
+========================================================= */
+
+.product-image-box {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.product-image-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain !important;
+    object-position: center center;
+    padding: 5px;
+}
+
+
+/* =========================================================
+   WISHLIST HEART
+========================================================= */
+
+.wishlist-heart {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #fff;
+    color: #333;
+
+    font-size: 26px;
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+
+    z-index: 10;
+    transition: 0.2s;
+}
+
+.wishlist-heart:hover {
+    transform: scale(1.1);
+    color: #8f0c05;
+}
+
+
+/* =========================================================
+   PRODUCT DETAILS
+========================================================= */
+
+.product-details {
+    padding-top: 2px;
+}
+
+.product h3 {
+    margin: 15px 15px 8px;
+    font-size: 17px;
+    color: #222;
+}
+
+.product p {
+    margin: 0 15px 8px;
+}
+
+.product .brand {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.product .size {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.product .price {
+    color: #8f0c05;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+
+/* =========================================================
+   PRODUCT BUTTONS
+========================================================= */
+
+.product-buttons {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+
+    width: auto;
+    margin: 0 10px;
+}
+
+.product-buttons button {
+    flex: 1;
+    width: auto;
+    margin: 0;
+
+    min-height: 42px;
+    padding: 10px 8px;
+
+    border: none;
+    border-radius: 4px;
+
+    color: #fff;
+    cursor: pointer;
+
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+
+    transition: 0.2s;
+}
+
+
+/* =========================================================
+   ADD TO CART
+========================================================= */
+
+.add-cart-btn {
+    background: #8f0c05;
+}
+
+.add-cart-btn:hover {
+    background: #650803;
+}
+
+
+/* =========================================================
+   BUY NOW
+========================================================= */
+
+.buy-now-btn {
+    background: #222;
+}
+
+.buy-now-btn:hover {
+    background: #000;
+}
+
+
+/* =========================================================
+   NO PRODUCTS / ERROR
+========================================================= */
+
+.no-products,
+.error-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    margin-top: 70px;
+    padding: 50px 7% 20px;
+    background: #222;
+    color: #fff;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-content a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.footer-content a:hover {
+    color: #fff;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .women-header nav {
+        gap: 12px;
+    }
+
+    .women-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .women-hero-content {
+        padding: 50px 7%;
+    }
+
+    .women-hero-image {
+        height: 500px;
+    }
+
+    .filters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-image-box {
+        height: 280px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .women-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .women-header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 14px;
+    }
+
+    .header-actions {
+        gap: 12px;
+    }
+
+    .women-hero-content h1 {
+        font-size: 40px;
+    }
+
+    .women-hero-image {
+        height: 450px;
+    }
+
+    .filters {
+        grid-template-columns: 1fr;
+    }
+
+    .products-section {
+        padding: 0 12px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .product-image-box {
+        height: 240px;
+    }
+
+    .product-image-box img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain !important;
+    }
+
+    .product h3 {
+        font-size: 14px;
+        margin: 12px 10px 6px;
+    }
+
+    .product p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .product .brand,
+    .product .size {
+        font-size: 12px;
+    }
+
+    .product .price {
+        font-size: 15px;
+        margin-top: 8px;
+    }
+
+    /* Add Cart + Buy Now SIDE BY SIDE */
+
+    .product-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin: 0 7px;
+    }
+
+    .product-buttons button {
+        flex: 1;
+        width: auto;
+        min-height: 38px;
+        padding: 8px 4px;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    /* Wishlist heart */
+
+    .wishlist-heart {
+        width: 36px;
+        height: 36px;
+        top: 8px;
+        right: 8px;
+        font-size: 22px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
