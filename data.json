@@ -1,0 +1,1309 @@
+{
+  "addresses": [
+    {
+      "id": 1790149694305,
+      "customerId": 1,
+      "fullName": "Likitha",
+      "phone": "2345677854",
+      "address": "Palakollu,1-34/2,gandhi street",
+      "city": "palakollu",
+      "state": "Andhara Pradesh",
+      "pincode": "432345",
+      "updatedAt": "2026-09-24T10:04:54.117Z"
+    },
+    {
+      "id": 1793940869916,
+      "customerId": 3,
+      "fullName": "Likitha",
+      "phone": "7865443554",
+      "address": "Palakollu,1-34/2,gandhi street",
+      "city": "palakollu",
+      "state": "Andhara Pradesh",
+      "pincode": "432345",
+      "createdAt": "2026-11-06T04:54:29.916Z"
+    },
+    {
+      "id": 1794288813662,
+      "customerId": 4,
+      "fullName": "Likitha",
+      "phone": "5654435567",
+      "address": "Palakollu,1-34/2,gandhi street",
+      "city": "palakollu",
+      "state": "Andhara Pradesh",
+      "pincode": "432345",
+      "createdAt": "2026-11-10T05:33:33.662Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1790150533779,
+      "orderNo": "ORD-1790150533779",
+      "customerId": 1,
+      "date": "2026-09-23T08:02:13.779Z",
+      "items": [
+        {
+          "productId": 22,
+          "name": "Premium Handkerchief Set",
+          "price": 299,
+          "image": "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=600&q=80",
+          "quantity": 1,
+          "amount": 299
+        }
+      ],
+      "total": 299,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "orderStatus": "Placed",
+      "addressId": 1790149694305,
+      "address": {
+        "fullName": "Likitha",
+        "phone": "2345677855",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      },
+      "orderType": "BUY_NOW"
+    },
+    {
+      "id": 1790575540012,
+      "orderNo": "ORD-1790575540012",
+      "customerId": 1,
+      "date": "2026-09-28T06:05:40.012Z",
+      "items": [
+        {
+          "productId": 1,
+          "name": "Classic T-Shirt",
+          "price": 799,
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80",
+          "quantity": 1,
+          "amount": 799
+        }
+      ],
+      "total": 799,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "addressId": 1790149694305,
+      "address": {
+        "fullName": "Likitha",
+        "phone": "2345677854",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      },
+      "orderType": "BUY_NOW"
+    },
+    {
+      "id": 1,
+      "orderNo": "VMART-1792576165269-65650F",
+      "customerId": 1,
+      "date": "2026-10-21T09:49:25.876Z",
+      "items": [
+        {
+          "productId": 3,
+          "name": "PANT",
+          "price": 1000,
+          "image": "",
+          "quantity": 1,
+          "amount": 1000
+        }
+      ],
+      "subtotal": 1000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 1000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "addressId": 1790149694305,
+      "address": {
+        "fullName": "Likitha",
+        "phone": "2345677854",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      },
+      "orderType": "BUY_NOW"
+    },
+    {
+      "id": 2,
+      "orderNo": "VMART-1792648498975-8E4370",
+      "customerId": 1,
+      "date": "2026-10-22T05:54:59.680Z",
+      "items": [
+        {
+          "productId": 1,
+          "name": "SHIRT",
+          "price": 500,
+          "image": "",
+          "quantity": 1,
+          "amount": 500
+        }
+      ],
+      "subtotal": 500,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 500,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "addressId": 1790149694305,
+      "address": {
+        "fullName": "Likitha",
+        "phone": "2345677854",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      },
+      "orderType": "BUY_NOW"
+    },
+    {
+      "id": 3,
+      "orderNo": "VMART-1792668052803-4DDF6A",
+      "customerId": 1,
+      "date": "2026-10-22T11:20:53.422Z",
+      "items": [
+        {
+          "productId": 3,
+          "name": "PANT",
+          "price": 1000,
+          "image": "",
+          "quantity": 1,
+          "amount": 1000
+        }
+      ],
+      "subtotal": 1000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 1000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "addressId": 1790149694305,
+      "address": {
+        "fullName": "Likitha",
+        "phone": "2345677854",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      },
+      "orderType": "BUY_NOW"
+    },
+    {
+      "id": 4,
+      "orderNo": "VMART-1792998525820-8F14C6",
+      "customerId": 2,
+      "date": "2026-10-26T07:08:46.402Z",
+      "items": [
+        {
+          "productId": 4,
+          "name": "KURTI",
+          "price": 500,
+          "quantity": 1,
+          "size": "",
+          "category": "women",
+          "color": "",
+          "image": "",
+          "amount": 500
+        }
+      ],
+      "subtotal": 500,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 500,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "addressId": 1792998519303,
+      "address": {
+        "fullName": "Likitha",
+        "phone": "02345677855",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      },
+      "orderType": "BUY_NOW"
+    },
+    {
+      "id": 13,
+      "orderNo": "VMART-1793076455917-96544B",
+      "customerId": 1,
+      "date": "2026-10-27T04:47:36.555Z",
+      "items": [
+        {
+          "productId": 10,
+          "name": "Formal Shirts",
+          "price": 3000,
+          "quantity": 1,
+          "size": "",
+          "color": "",
+          "category": "men",
+          "image": "",
+          "amount": 3000
+        }
+      ],
+      "subtotal": 3000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 3000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "addressId": 1790149694305,
+      "address": {
+        "fullName": "Likitha",
+        "phone": "2345677854",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      },
+      "orderType": "BUY_NOW"
+    },
+    {
+      "id": 24,
+      "orderNo": "VMART-1793865406783-69ED36",
+      "customerId": 2,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-05T07:56:47.690Z",
+      "items": [
+        {
+          "productId": 7,
+          "name": "Trousers",
+          "price": 900,
+          "quantity": 1,
+          "size": "S",
+          "color": "Red",
+          "category": "women",
+          "image": "",
+          "amount": 900
+        }
+      ],
+      "subtotal": 900,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 900,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "02345677855",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 25,
+      "orderNo": "VMART-1793865437091-19CD8D",
+      "customerId": 2,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-05T07:57:17.962Z",
+      "items": [
+        {
+          "productId": 10,
+          "name": "Formal Shirts",
+          "price": 3000,
+          "quantity": 1,
+          "size": "L",
+          "color": "Black",
+          "category": "men",
+          "image": "",
+          "amount": 3000
+        }
+      ],
+      "subtotal": 3000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 3000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "02345677855",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 27,
+      "orderNo": "VMART-1793869412573-8AB998",
+      "customerId": 2,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-05T09:03:33.406Z",
+      "items": [
+        {
+          "productId": 12,
+          "name": "Dresses",
+          "price": 2000,
+          "quantity": 1,
+          "size": "XS",
+          "color": "White",
+          "category": "women",
+          "image": "",
+          "amount": 2000
+        }
+      ],
+      "subtotal": 2000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 2000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "02345677855",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 28,
+      "orderNo": "VMART-1793943849546-B4B704",
+      "customerId": 3,
+      "email": "phani@gmail.com",
+      "date": "2026-11-06T05:44:10.313Z",
+      "items": [
+        {
+          "productId": 12,
+          "name": "Dresses",
+          "price": 2000,
+          "quantity": 1,
+          "size": "M",
+          "color": "Brown",
+          "category": "women",
+          "image": "",
+          "amount": 2000
+        }
+      ],
+      "subtotal": 2000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 2000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "7865443554",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 29,
+      "orderNo": "VMART-1794201896695-CE91E1",
+      "customerId": 3,
+      "email": "phani@gmail.com",
+      "date": "2026-11-09T05:24:57.511Z",
+      "items": [
+        {
+          "productId": 13,
+          "name": "Nightwear",
+          "price": 1000,
+          "quantity": 1,
+          "size": "0-6 Months",
+          "color": "Red",
+          "category": "kids",
+          "image": "",
+          "amount": 1000
+        }
+      ],
+      "subtotal": 1000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 1000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "7865443554",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 30,
+      "orderNo": "VMART-1794202053632-EE2334",
+      "customerId": 3,
+      "email": "phani@gmail.com",
+      "date": "2026-11-09T05:27:34.465Z",
+      "items": [
+        {
+          "productId": 11,
+          "name": "Bed sheets",
+          "price": 1000,
+          "quantity": 1,
+          "size": "Single",
+          "color": "Blue",
+          "category": "home_essentials",
+          "image": "",
+          "amount": 1000
+        }
+      ],
+      "subtotal": 1000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 1000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "7865443554",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 31,
+      "orderNo": "VMART-1794222571510-881274",
+      "customerId": 3,
+      "email": "phani@gmail.com",
+      "date": "2026-11-09T11:09:32.306Z",
+      "items": [
+        {
+          "productId": 9,
+          "name": "Frocks",
+          "price": 500,
+          "quantity": 1,
+          "size": "0-6 Months",
+          "color": "Red",
+          "category": "kids",
+          "image": "",
+          "amount": 500
+        }
+      ],
+      "subtotal": 500,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 500,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "7865443554",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 41,
+      "orderNo": "VMART-1794306833273-7AAA17",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-10T10:33:57.702Z",
+      "items": [
+        {
+          "productId": 12,
+          "name": "Dresses",
+          "price": 2000,
+          "quantity": 1,
+          "size": "XS",
+          "color": "Red",
+          "category": "women",
+          "image": "",
+          "amount": 2000
+        }
+      ],
+      "subtotal": 2000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 2000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 42,
+      "orderNo": "VMART-1794307096905-65EF8A",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-10T10:38:17.702Z",
+      "items": [
+        {
+          "productId": 7,
+          "name": "Trousers",
+          "price": 900,
+          "quantity": 1,
+          "size": "XS",
+          "color": "Red",
+          "category": "women",
+          "image": "",
+          "amount": 900
+        }
+      ],
+      "subtotal": 900,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 900,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 43,
+      "orderNo": "VMART-1794307501252-9F6EFE",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-10T10:45:02.115Z",
+      "items": [
+        {
+          "productId": 9,
+          "name": "Frocks",
+          "price": 500,
+          "quantity": 1,
+          "size": "0-6 months",
+          "color": "Red",
+          "category": "kids",
+          "image": "",
+          "amount": 500
+        }
+      ],
+      "subtotal": 500,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 500,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 44,
+      "orderNo": "VMART-1794395332454-E24209",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-11T11:08:53.236Z",
+      "items": [
+        {
+          "productId": 12,
+          "name": "Dresses",
+          "price": 2000,
+          "quantity": 10,
+          "size": "XS",
+          "color": "Red",
+          "category": "women",
+          "image": "",
+          "amount": 20000
+        }
+      ],
+      "subtotal": 20000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 20000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 45,
+      "orderNo": "VMART-1794457840978-CE85B4",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-12T04:30:41.806Z",
+      "items": [
+        {
+          "productId": 11,
+          "name": "Bed sheets",
+          "price": 1000,
+          "quantity": 1,
+          "size": "Single",
+          "color": "Red",
+          "category": "home_essentials",
+          "image": "",
+          "amount": 1000
+        }
+      ],
+      "subtotal": 1000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 1000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 48,
+      "orderNo": "VMART-1794468360430-B8B72F",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-12T07:26:01.296Z",
+      "items": [
+        {
+          "productId": 11,
+          "name": "Bed sheets",
+          "price": 1000,
+          "quantity": 1,
+          "size": "Double",
+          "color": "Brown",
+          "category": "home_essentials",
+          "image": "",
+          "amount": 1000
+        }
+      ],
+      "subtotal": 1000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 1000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 49,
+      "orderNo": "VMART-1794471634289-D76CA9",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-12T08:20:35.122Z",
+      "items": [
+        {
+          "productId": 8,
+          "name": "Frocks",
+          "price": 1500,
+          "quantity": 1,
+          "size": "0-6 months",
+          "color": "Red",
+          "category": "kids",
+          "image": "",
+          "amount": 1500
+        }
+      ],
+      "subtotal": 1500,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 1500,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 50,
+      "orderNo": "VMART-1794471862551-369F2B",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-12T08:24:23.386Z",
+      "items": [
+        {
+          "productId": 10,
+          "name": "Formal Shirts",
+          "price": 3000,
+          "quantity": 1,
+          "size": "M",
+          "color": "White",
+          "category": "men",
+          "image": "",
+          "amount": 3000
+        }
+      ],
+      "subtotal": 3000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 3000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 51,
+      "orderNo": "VMART-1794472028760-E54E6E",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-12T08:27:09.668Z",
+      "items": [
+        {
+          "productId": 8,
+          "name": "Frocks",
+          "price": 1500,
+          "quantity": 1,
+          "size": "0-6 months",
+          "color": "White",
+          "category": "kids",
+          "image": "",
+          "amount": 1500
+        }
+      ],
+      "subtotal": 1500,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 1500,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 52,
+      "orderNo": "VMART-1794473774184-D148BF",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-12T08:56:15.122Z",
+      "items": [
+        {
+          "productId": 11,
+          "name": "Bed sheets",
+          "price": 1000,
+          "quantity": 1,
+          "size": "Single",
+          "color": "White",
+          "category": "home_essentials",
+          "image": "",
+          "amount": 1000
+        }
+      ],
+      "subtotal": 1000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 1000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 53,
+      "orderNo": "VMART-1794473915858-D393AF",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-12T08:58:36.729Z",
+      "items": [
+        {
+          "productId": 11,
+          "name": "Bed sheets",
+          "price": 1000,
+          "quantity": 1,
+          "size": "Double",
+          "color": "Brown",
+          "category": "home_essentials",
+          "image": "",
+          "amount": 1000
+        }
+      ],
+      "subtotal": 1000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 1000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 54,
+      "orderNo": "VMART-1794477734742-AC4019",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-12T10:02:19.115Z",
+      "items": [
+        {
+          "productId": 11,
+          "name": "Bed sheets",
+          "price": 1000,
+          "quantity": 1,
+          "size": "Single",
+          "color": "White",
+          "category": "home_essentials",
+          "image": "",
+          "amount": 1000
+        }
+      ],
+      "subtotal": 1000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 1000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 55,
+      "orderNo": "VMART-1794477805119-2A8896",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-12T10:03:26.699Z",
+      "items": [
+        {
+          "productId": 10,
+          "name": "Formal Shirts",
+          "price": 3000,
+          "quantity": 1,
+          "size": "M",
+          "color": "White",
+          "category": "men",
+          "image": "",
+          "amount": 3000
+        }
+      ],
+      "subtotal": 3000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 3000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 56,
+      "orderNo": "VMART-1794478059242-79E4B8",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-12T10:07:43.167Z",
+      "items": [
+        {
+          "productId": 7,
+          "name": "Trousers",
+          "price": 900,
+          "quantity": 1,
+          "size": "S",
+          "color": "Red",
+          "category": "women",
+          "image": "",
+          "amount": 900
+        }
+      ],
+      "subtotal": 900,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 900,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 57,
+      "orderNo": "VMART-1794479376186-258335",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-12T10:29:37.058Z",
+      "items": [
+        {
+          "productId": 12,
+          "name": "Dresses",
+          "price": 2000,
+          "quantity": 1,
+          "size": "S",
+          "color": "White",
+          "category": "women",
+          "image": "",
+          "amount": 2000
+        }
+      ],
+      "subtotal": 2000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 2000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 62,
+      "orderNo": "VMART-1794547173266-4875B5",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-13T05:19:34.104Z",
+      "items": [
+        {
+          "productId": 10,
+          "name": "Formal Shirts",
+          "price": 3000,
+          "quantity": 1,
+          "size": "L",
+          "color": "Black",
+          "category": "men",
+          "image": "",
+          "amount": 3000
+        }
+      ],
+      "subtotal": 3000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 3000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 63,
+      "orderNo": "VMART-1794547348476-87D843",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-13T05:22:29.316Z",
+      "items": [
+        {
+          "productId": 10,
+          "name": "Formal Shirts",
+          "price": 3000,
+          "quantity": 1,
+          "size": "L",
+          "color": "Brown",
+          "category": "men",
+          "image": "",
+          "amount": 3000
+        }
+      ],
+      "subtotal": 3000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 3000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 65,
+      "orderNo": "VMART-1794559915726-C5C176",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-13T08:51:56.459Z",
+      "items": [
+        {
+          "productId": 10,
+          "name": "Formal Shirts",
+          "price": 3000,
+          "quantity": 1,
+          "size": "L",
+          "color": "Brown",
+          "category": "men",
+          "image": "",
+          "amount": 3000
+        }
+      ],
+      "subtotal": 3000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 3000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 66,
+      "orderNo": "VMART-1794560026657-423D43",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-13T08:53:47.481Z",
+      "items": [
+        {
+          "productId": 10,
+          "name": "Formal Shirts",
+          "price": 3000,
+          "quantity": 1,
+          "size": "XL",
+          "color": "Black",
+          "category": "men",
+          "image": "",
+          "amount": 3000
+        }
+      ],
+      "subtotal": 3000,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 3000,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    },
+    {
+      "id": 67,
+      "orderNo": "VMART-1794560679001-91A7D1",
+      "customerId": 4,
+      "email": "anjalinadapana@gmail.com",
+      "date": "2026-11-13T09:04:40.069Z",
+      "items": [
+        {
+          "productId": 7,
+          "name": "Trousers",
+          "price": 900,
+          "quantity": 1,
+          "size": "M",
+          "color": "Brown",
+          "category": "women",
+          "image": "",
+          "amount": 900
+        }
+      ],
+      "subtotal": 900,
+      "shippingCharge": 0,
+      "discount": 0,
+      "total": 900,
+      "paymentMethod": "COD",
+      "paymentStatus": "Pending",
+      "paymentId": null,
+      "razorpayOrderId": null,
+      "orderStatus": "Placed",
+      "orderType": "BUY_NOW",
+      "address": {
+        "fullName": "Likitha",
+        "phone": "5654435567",
+        "address": "Palakollu,1-34/2,gandhi street",
+        "city": "palakollu",
+        "state": "Andhara Pradesh",
+        "pincode": "432345"
+      }
+    }
+  ],
+  "paymentOrders": []
+}
