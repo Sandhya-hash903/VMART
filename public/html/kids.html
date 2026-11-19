@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Kids Collection | V Mart</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/customer.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/kids.css"
+    >
+
+    <style>
+
+        /* =====================================================
+           PAGE SEARCH
+        ====================================================== */
+
+        .page-search {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            border: 1px solid #ddd;
+            border-radius: 22px;
+            background: #ffffff;
+            overflow: hidden;
+            transition: 0.3s ease;
+        }
+
+        .page-search:focus-within {
+            border-color: #8f0c05;
+            box-shadow: 0 0 0 2px rgba(143, 12, 5, 0.08);
+        }
+
+        .page-search input {
+            width: 220px;
+            height: 38px;
+            padding: 0 15px;
+            border: none;
+            outline: none;
+            background: transparent;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .page-search input::placeholder {
+            color: #999;
+        }
+
+        .page-search button {
+            width: 45px;
+            height: 38px;
+            padding: 0;
+            border: none;
+            background: #8f0c05;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s ease;
+        }
+
+        .page-search button:hover {
+            background: #6f0904;
+        }
+
+        /* =====================================================
+           SEARCH MESSAGE
+        ====================================================== */
+
+        #pageSearchMessage {
+            width: 100%;
+            padding: 15px 20px;
+            text-align: center;
+            color: #555;
+            font-size: 15px;
+        }
+
+        #pageSearchMessage strong {
+            color: #8f0c05;
+        }
+
+        /* =====================================================
+           NO PRODUCTS
+        ====================================================== */
+
+        .no-products {
+            width: 100%;
+            padding: 60px 20px;
+            text-align: center;
+            grid-column: 1 / -1;
+        }
+
+        .no-products-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .no-products h3 {
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 22px;
+        }
+
+        .no-products p {
+            color: #777;
+            font-size: 15px;
+        }
+
+        /* =====================================================
+           LOADING
+        ====================================================== */
+
+        .loading-message {
+            width: 100%;
+            padding: 50px 20px;
+            text-align: center;
+            color: #777;
+            grid-column: 1 / -1;
+        }
+
+        /* =====================================================
+           ERROR
+        ====================================================== */
+
+        .error-message {
+            width: 100%;
+            padding: 50px 20px;
+            text-align: center;
+            grid-column: 1 / -1;
+        }
+
+        .error-message h3 {
+            color: #8f0c05;
+            margin-bottom: 10px;
+        }
+
+        .error-message p {
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .error-message button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #8f0c05;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .error-message button:hover {
+            background: #6f0904;
+        }
+
+        /* =====================================================
+           KIDS TRADITIONAL WEAR HERO IMAGE
+        ====================================================== */
+
+        .kids-hero-image {
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .kids-hero-image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 350px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media (max-width: 1100px) {
+
+            .page-search {
+                margin-left: 10px;
+            }
+
+            .page-search input {
+                width: 160px;
+            }
+
+        }
+
+        @media (max-width: 900px) {
+
+            .page-search {
+                order: 3;
+                width: 100%;
+                margin: 10px 0 0;
+            }
+
+            .page-search input {
+                width: 100%;
+            }
+
+            .kids-hero-image img {
+                min-height: 280px;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .page-search {
+                width: 100%;
+            }
+
+            .page-search input {
+                width: 100%;
+            }
+
+            .kids-hero-image img {
+                min-height: 220px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="kids-header">
+
+    <div class="logo">
+        V Mart
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="men.html">
+            Men
+        </a>
+
+        <a href="women.html">
+            Women
+        </a>
+
+        <a
+            href="kids.html"
+            class="active"
+        >
+            Kids
+        </a>
+
+        <a href="home_essentials.html">
+            Home Essentials
+        </a>
+
+        <a href="categories.html">
+            Categories
+        </a>
+
+    </nav>
+
+    <!-- SEARCH -->
+
+    <div class="page-search">
+
+        <input
+            type="text"
+            id="pageSearch"
+            class="page-search-input"
+            placeholder="Search kids products..."
+            autocomplete="off"
+        >
+
+        <button
+            type="button"
+            class="page-search-button"
+            onclick="searchCurrentPage(this)"
+            title="Search"
+        >
+            🔍
+        </button>
+
+    </div>
+
+    <!-- HEADER ACTIONS -->
+
+    <div class="header-actions">
+
+        <a
+            href="wishlist.html"
+            title="Wishlist"
+        >
+            ♡
+        </a>
+
+        <a
+            href="cart.html"
+            title="Cart"
+        >
+            🛒
+        </a>
+
+        <a
+            href="login.html"
+            title="Login"
+        >
+            Login
+        </a>
+
+    </div>
+
+</header>
+
+<!-- =========================================================
+     KIDS HERO - TRADITIONAL WEAR
+========================================================= -->
+
+<section class="kids-hero">
+
+    <div class="kids-hero-content">
+
+        <p class="hero-label">
+            V MART KIDS COLLECTION
+        </p>
+
+        <h1>
+            Little Styles.
+            <span>
+                Big Smiles.
+            </span>
+        </h1>
+
+        <p>
+            Discover beautiful traditional outfits for
+            boys and girls. Explore festive kurtas,
+            ethnic wear, lehengas and stylish traditional
+            collections for little ones.
+        </p>
+
+    </div>
+
+    <div class="kids-hero-image">
+
+        <img
+            src="../images/Festive Indian Kidswear Portrait.png"
+            alt="Boys and girls wearing traditional Indian outfits"
+            loading="eager"
+            onerror="this.onerror=null; this.src='../images/placeholder.jpg';"
+        >
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     INTRO
+========================================================= -->
+
+<section class="kids-intro">
+
+    <p>
+        EXPLORE OUR COLLECTION
+    </p>
+
+    <h2>
+        Kids Fashion
+    </h2>
+
+</section>
+
+<!-- =========================================================
+     FILTER SECTION
+========================================================= -->
+
+<section class="filter-section">
+
+    <h2>
+        Filter Products
+    </h2>
+
+    <div class="filters">
+
+        <!-- SIZE -->
+
+        <div class="filter-box">
+
+            <label for="sizeFilter">
+                Size
+            </label>
+
+            <select id="sizeFilter">
+
+                <option value="">
+                    All Sizes
+                </option>
+
+                <option value="2-3Y">
+                    2-3 Years
+                </option>
+
+                <option value="4-5Y">
+                    4-5 Years
+                </option>
+
+                <option value="6-7Y">
+                    6-7 Years
+                </option>
+
+                <option value="8-9Y">
+                    8-9 Years
+                </option>
+
+                <option value="10-12Y">
+                    10-12 Years
+                </option>
+
+                <option value="13-14Y">
+                    13-14 Years
+                </option>
+
+            </select>
+
+        </div>
+
+        <!-- BRAND -->
+
+        <div class="filter-box">
+
+            <label for="brandFilter">
+                Brand
+            </label>
+
+            <select id="brandFilter">
+
+                <option value="">
+                    All Brands
+                </option>
+
+            </select>
+
+        </div>
+
+        <!-- CATEGORY -->
+
+        <div class="filter-box">
+
+            <label for="categoryFilter">
+                Category
+            </label>
+
+            <select id="categoryFilter">
+
+                <option value="">
+                    All Categories
+                </option>
+
+                <option value="boys">
+                    Boys
+                </option>
+
+                <option value="girls">
+                    Girls
+                </option>
+
+                <option value="tshirt">
+                    T-Shirts
+                </option>
+
+                <option value="shirt">
+                    Shirts
+                </option>
+
+                <option value="dress">
+                    Dresses
+                </option>
+
+                <option value="jeans">
+                    Jeans
+                </option>
+
+                <option value="casual">
+                    Casual Wear
+                </option>
+
+                <option value="party">
+                    Party Wear
+                </option>
+
+            </select>
+
+        </div>
+
+        <!-- PRICE -->
+
+        <div class="filter-box">
+
+            <label for="priceFilter">
+                Price
+            </label>
+
+            <select id="priceFilter">
+
+                <option value="">
+                    All Prices
+                </option>
+
+                <option value="0-500">
+                    ₹0 - ₹500
+                </option>
+
+                <option value="500-1000">
+                    ₹500 - ₹1,000
+                </option>
+
+                <option value="1000-2000">
+                    ₹1,000 - ₹2,000
+                </option>
+
+                <option value="2000-5000">
+                    ₹2,000 - ₹5,000
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     PRODUCTS
+========================================================= -->
+
+<section class="products-section">
+
+    <div class="products-heading">
+
+        <div>
+
+            <p>
+                SHOP NOW
+            </p>
+
+            <h2>
+                Kids Products
+            </h2>
+
+        </div>
+
+        <span id="productCount">
+            Loading...
+        </span>
+
+    </div>
+
+    <!-- SEARCH MESSAGE -->
+
+    <div
+        id="pageSearchMessage"
+        style="display:none;"
+    ></div>
+
+    <!-- PRODUCTS -->
+
+    <div
+        id="products"
+        class="products-grid"
+    >
+
+        <p class="loading-message">
+            Loading products...
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <!-- BRAND -->
+
+        <div>
+
+            <h3>
+                V Mart
+            </h3>
+
+            <p>
+                Modern fashion for every style,
+                every day and every occasion.
+            </p>
+
+        </div>
+
+        <!-- SHOP -->
+
+        <div>
+
+            <h3>
+                Shop
+            </h3>
+
+            <a href="men.html">
+                Men
+            </a>
+
+            <a href="women.html">
+                Women
+            </a>
+
+            <a href="kids.html">
+                Kids
+            </a>
+
+            <a href="home_essentials.html">
+                Home Essentials
+            </a>
+
+            <a href="categories.html">
+                Categories
+            </a>
+
+        </div>
+
+        <!-- CUSTOMER -->
+
+        <div>
+
+            <h3>
+                Customer
+            </h3>
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 V Mart All Rights Reserved.
+    </p>
+
+</footer>
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="../js/customer.js"></script>
+
+<script src="../js/kids.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width,initial-scale=1">
+
+<title>Checkout | V & Mart</title>
+
+<link rel="stylesheet"
+      href="../css/customer.css">
+
+<link rel="stylesheet"
+      href="../css/checkout.css">
+
+</head>
+
+<body>
+
+<!---<div class="shipping-bar">
+    Free Shipping on Orders Above ₹999
+</div>--->
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="main-header">
+
+    <div class="logo">
+
+        <a href="index.html">
+            V <span>&</span> Mart
+        </a>
+
+    </div>
+
+
+    <nav class="main-nav">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="men.html">
+            Men
+        </a>
+
+        <a href="women.html">
+            Women
+        </a>
+
+        <a href="kids.html">
+            Kids
+        </a>
+
+        <a href="home_essentials.html">
+            Home Essentials
+        </a>
+
+        <a href="categories.html">
+            Categories
+        </a>
+
+    </nav>
+
+
+    <div class="header-actions">
+
+        <a href="wishlist.html">
+            ♡
+            <span>Wishlist</span>
+        </a>
+
+        <a href="cart.html">
+            🛒
+            <span>Cart</span>
+        </a>
+
+        <a href="profile.html">
+            👤
+            <span>My Profile</span>
+        </a>
+
+        <a href="orders.html">
+            📦
+            <span>Orders</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     CHECKOUT
+========================================================= -->
+
+<main class="checkout-container">
+
+    <h1>
+        Checkout
+    </h1>
+
+
+    <!-- =====================================================
+         DELIVERY ADDRESS
+    ====================================================== -->
+
+    <section class="checkout-section delivery-address-section">
+
+        <h2>
+            Delivery Address
+        </h2>
+
+
+        <!-- SAVED ADDRESSES -->
+
+        <div
+            id="addressList"
+            class="address-list">
+
+            Loading addresses...
+
+        </div>
+
+
+        <!-- ADD NEW ADDRESS -->
+
+        <button
+            type="button"
+            id="showAddressFormBtn"
+            class="add-new-address-btn">
+
+            ＋ Add New Address
+
+        </button>
+
+
+        <!-- =================================================
+             ADDRESS FORM
+        ================================================== -->
+
+        <div
+            id="addressFormContainer"
+            class="address-form"
+            style="display:none;">
+
+            <h3 id="addressFormTitle">
+                Add New Address
+            </h3>
+
+
+            <form id="addressForm">
+
+
+                <!-- FULL NAME -->
+
+                <div class="form-group">
+
+                    <label for="addressName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="addressName"
+                        placeholder="Enter Full Name"
+                        required>
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label for="addressPhone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="addressPhone"
+                        placeholder="Enter Phone Number"
+                        required>
+
+                </div>
+
+
+                <!-- ADDRESS -->
+
+                <div class="form-group">
+
+                    <label for="address">
+                        Address
+                    </label>
+
+                    <textarea
+                        id="address"
+                        placeholder="Enter Full Address"
+                        required></textarea>
+
+                </div>
+
+
+                <!-- CITY / STATE / PINCODE -->
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="city">
+                            City
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            placeholder="City"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="state">
+                            State
+                        </label>
+
+                        <input
+                            type="text"
+                            id="state"
+                            placeholder="State"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="pincode">
+                            Pincode
+                        </label>
+
+                        <input
+                            type="text"
+                            id="pincode"
+                            placeholder="Pincode"
+                            required>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- FORM BUTTONS -->
+
+                <div class="address-form-buttons">
+
+                    <button
+                        type="submit"
+                        id="saveAddressBtn">
+
+                        Save Address
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="cancelAddressBtn">
+
+                        Cancel
+
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PAYMENT
+    ====================================================== -->
+
+    <section class="checkout-section">
+
+        <h2>
+            Payment
+        </h2>
+
+
+        <!-- COD -->
+
+        <label class="payment-option">
+
+            <input
+                type="radio"
+                name="payment"
+                value="COD"
+                checked>
+
+            <span>
+                Cash on Delivery
+            </span>
+
+        </label>
+
+
+        <!-- ONLINE -->
+
+        <!---<label class="payment-option">
+
+            <input
+                type="radio"
+                name="payment"
+                value="ONLINE">
+
+            <span>
+                Online Payment
+            </span>
+
+        </label>---->
+
+
+        <!-- ONLINE PAYMENT -->
+
+        <!---<div
+            id="onlinePaymentBox"
+            class="online-payment-box"
+            style="display:none;">
+
+            <p>
+                Pay securely using UPI, Card,
+                Net Banking or available payment
+                methods.
+            </p>
+
+
+            <button
+                id="onlinePayBtn"
+                type="button">
+
+                💳 Pay Online
+
+            </button>
+
+        </div>---->
+
+
+        <!-- PLACE ORDER -->
+
+        <button
+            id="placeOrderBtn"
+            class="place-order-btn"
+            type="button">
+
+            Place Order
+
+        </button>
+
+
+        <p id="paymentMessage"></p>
+
+    </section>
+
+
+    <!-- =====================================================
+         ORDER SUMMARY
+    ====================================================== -->
+
+    <section class="checkout-section">
+
+        <h2>
+            Order Summary
+        </h2>
+
+
+        <div id="orderSummary">
+
+            Loading...
+
+        </div>
+
+
+        <h2 class="checkout-total">
+
+            Total:
+
+            <span id="checkoutTotal">
+                ₹0
+            </span>
+
+        </h2>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================================
+     RAZORPAY
+========================================================= -->
+
+<!----<script src="https://checkout.razorpay.com/v1/checkout.js"></script>---->
+
+
+<!-- CUSTOMER JS -->
+
+<script src="../js/customer.js"></script>
+
+
+<!-- CHECKOUT JS -->
+
+<script src="../js/checkout.js"></script>
+
+
+</body>
+
+</html>
